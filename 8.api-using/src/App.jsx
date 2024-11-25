@@ -16,18 +16,37 @@ function App() {
   };
 
   const createUser = async (newUser) => {
+    // POST : veri eklemek için kullanılır
     const response = await axios.post(`${BASE_URL}/users`, newUser);
-    console.log("response" , response.data);
-  }
+    console.log("response", response.data);
+  };
+
+  const updateUser = async (userId, updatedUser) => {
+    // PUT : veri güncellemek için kullanılır
+    await axios.put(`${BASE_URL}/users/${userId}`, updatedUser);
+  };
+
+  const deleteUserById = async (userId) => {
+    const deletedUser = await axios.delete(`${BASE_URL}/users/${userId}`);
+    console.log(deletedUser);
+  };
 
   useEffect(() => {
     // getAllUsers();
     // getUsersById(2);
-    const newUser = {
-      "username": "can",
-      "password": "zzz"
-    }
-    createUser(newUser);
+
+    // const newUser = {
+    //   "username": "can",
+    //   "password": "zzz"
+    // }
+    // createUser(newUser);
+    
+    // updateUser("7bcb", {
+    //   "username": "afacan",
+    //   "password": "bbb"
+    // })
+
+    //deleteUserById("7bcb");
   }, []);
 
   return <></>;
