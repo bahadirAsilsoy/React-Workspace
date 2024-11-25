@@ -15,9 +15,19 @@ function App() {
     console.log(response.data);
   };
 
+  const createUser = async (newUser) => {
+    const response = await axios.post(`${BASE_URL}/users`, newUser);
+    console.log("response" , response.data);
+  }
+
   useEffect(() => {
-    //getAllUsers();
-    getUsersById(2);
+    // getAllUsers();
+    // getUsersById(2);
+    const newUser = {
+      "username": "can",
+      "password": "zzz"
+    }
+    createUser(newUser);
   }, []);
 
   return <></>;
