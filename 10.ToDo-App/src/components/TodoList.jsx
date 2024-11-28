@@ -3,10 +3,15 @@ import Todo from './Todo'
 import '../css/todoList.css'
 
 
-function TodoList() {
+function TodoList({todos}) {
   return (
     <div className='todo-list'>
-        <Todo />
+        {
+            todos && todos.map((todo) =>(
+                <Todo key={todo.id} todo ={todo}/>
+            ))
+        }
+        
     </div>
   )
 }

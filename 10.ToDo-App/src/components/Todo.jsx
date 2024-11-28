@@ -4,12 +4,13 @@ import { TiEdit } from "react-icons/ti";
 import '../css/todo.css'
 import '../css/todoCreate.css'
 
-function Todo() {
+function Todo({ todo }) {
+    const {id, content} = todo;
   return (
     <>
       <div className="todo">
         <div>
-            Ben ilk todo'yum
+            {content}
         </div>
 
         <div>
