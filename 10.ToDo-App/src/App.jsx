@@ -11,6 +11,10 @@ function App() {
     setTodos([...todos, newTodo]);
   }
   
+  const removeTodo = (todoId) => {
+    setTodos([...todos.filter((todo) => todo.id !== todoId)]);
+  }
+
   console.log(todos)
 
   return (
@@ -18,7 +22,7 @@ function App() {
       <div className="App">
         <div className="main">
           <TodoCreate onCreateTodo = {createTodo} />
-          <TodoList todos={todos}/>
+          <TodoList todos={todos} onRemoveTodo={removeTodo}/>
         </div>
       </div>
     </>
