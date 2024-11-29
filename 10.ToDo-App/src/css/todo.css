@@ -1,9 +1,53 @@
-.todo{
-    display:flex;
-    flex-direction:row; 
-    align-items:center ;
-    justify-content:space-between;
+.todo {
+    display: flex;
+    flex-direction: row; 
+    align-items: center;
+    justify-content: space-between;
     border: 1px solid lightgrey;
     padding: 10px;
     margin-top: 10px;
+    border-radius: 8px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    background-color: #f9f9f9; 
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    animation: slideDown 0.4s ease-out; 
+    background-color: #f9f9f9; 
+    transition: background-color 0.4s ease; 
 }
+
+.todo:hover {
+    transform: scale(1.02); 
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); 
+}
+
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-20px); 
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0); 
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1; /* Tamamen görünür */
+        height: 50px; /* Varsayılan yüksekliği */
+    }
+    to {
+        opacity: 0; /* Görünmez */
+        height: 0; /* Yükseklik sıfırlanır */
+        margin: 0; /* Boşluk da sıfırlanır */
+        padding: 0; /* İç boşluk sıfırlanır */
+    }
+}
+
+.todo-removing {
+    animation: fadeOut 0.4s ease-out forwards; /* Silme animasyonu */
+}
+
+
+

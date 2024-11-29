@@ -7,12 +7,28 @@
 }
 
 .todo-input{
+    margin-top: 5px;
     width: 100%;
     padding: 10px 0px;
     border: none;
     border-bottom: 1px solid lightgrey;
     outline: none;
+    text-indent: 10px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    transition: all 0.3s ease;
 }
+
+.todo-input:focus {
+    border: 2px solid #007BFF;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); 
+    background-color: #f9f9f9;
+}
+
+.todo-input::placeholder {
+    color: #aaa;
+    font-style: italic; 
+}   
 
 .todo-create-button{
     margin-top: 10px;
@@ -21,6 +37,7 @@
     border-radius: 5px;
     background-color: gold;
     font-weight: 700;
+    transition: background-color 0.35s ease;
 }
 
 .todo-create-button:hover{
@@ -36,6 +53,7 @@
 .todo-icon-remove:hover{
     cursor: pointer;
     color: #C82333;
+    transition: color 0.35s ease;
 }
 .todo-icon-edit{
     font-size: 21px;
@@ -45,4 +63,17 @@
 .todo-icon-edit:hover{
     cursor: pointer;
     color: #007BFF;
+    transition: color 0.35s ease;
 }
+
+.todo-icon-check{
+    font-size: 21px;
+    margin-right: 2.2px;
+}
+
+.todo-icon-check:hover{
+    cursor: pointer;
+    color: #28A745;
+    transition: color 0.35s ease;
+}
+
