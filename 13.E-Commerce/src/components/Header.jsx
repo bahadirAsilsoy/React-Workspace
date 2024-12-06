@@ -31,9 +31,9 @@ function Header() {
             <input className="search-input" type='text' placeholder='Bir şeyler ara'/>
             <div>
                 {
-                    theme ? <CiDark className='icon' onClick={changeTheme}/> : <CiLight className='icon' onClick={changeTheme}/>
+                    theme ? <CiDark className='icon-moon' onClick={changeTheme}/> : <CiLight className='icon-sun' onClick={changeTheme}/>
                 }
-                <CiShoppingBasket className='icon'/>
+                <CiShoppingBasket className='icon-basket'/>
             </div>
         </div>
     </div>

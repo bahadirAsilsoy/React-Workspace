@@ -17,11 +17,32 @@
     margin-right: 10px;
 }
 
-.icon {
+.icon-basket {
     font-size: 20px;
     margin-right: 10px;
 }
 
-.icon:hover {
+.icon-sun {
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.icon-moon {
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+
+.icon-basket:hover {
+    cursor: pointer;
+    color: #28A745;
+}
+
+.icon-sun:hover {
+    cursor: pointer;
+}
+
+
+.icon-moon:hover {
     cursor: pointer;
 }
