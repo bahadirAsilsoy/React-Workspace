@@ -1,0 +1,38 @@
+.icon-plus{
+    font-size: 21px;
+    margin-right: 2.2px;
+}
+
+.icon-plus:hover{
+    cursor: pointer;
+    color: #28A745;
+    transition: color 0.20s ease;
+}
+
+.icon-minus{
+    font-size: 21px;
+    margin-right: 2.2px;
+}
+
+.icon-minus:hover{
+    cursor: pointer;
+    color: #C82333;
+    transition: color 0.20s ease;
+}
+
+.buy-button{
+    /* marginTop: '25px', border: 'none', padding: '10px', backgroundColor: 'rgb(185, 76, 76)', color: '#fff', borderRadius: '5px' */
+    margin-top: 25px;
+    border: none;
+    padding: 10px;
+    background-color: rgb(185, 76, 76);
+    color: #fff;
+    border-radius: 5px;
+}
+
+.buy-button:hover{
+    cursor: pointer;
+    background-color: rgb(121, 3, 3);
+    transition: background-color 0.35s ease;
+}
+
