@@ -26,3 +26,18 @@ body {
     width: 500px !important;
 
 }
+
+.drawer-delete-button{
+    background-color: rgb(185, 76, 76);
+    color: #fff;
+    border: 2px solid rgb(255, 181, 22);
+    border-radius: 5px;
+    padding-inline: 8px;
+    padding-block: 3px;
+} 
+
+.drawer-delete-button:hover{
+    cursor: pointer;
+    background-color: rgb(121, 3, 3);
+    transition: background-color 0.35s ease;
+}
